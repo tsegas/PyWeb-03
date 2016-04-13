@@ -24,6 +24,7 @@ Consider the following URL/Response body pairs as tests:
   http://localhost:8080/subtract/23/42 => -19
   http://localhost:8080/divide/22/11   => 2
   http://localhost:8080/divide/6/0     => HTTP "400 Bad Request"
+  http://localhost:8080/               => <html>Here's how to use this page...</html>
 ```
 
 To submit your homework:
@@ -43,11 +44,11 @@ To submit your homework:
 
 
 def add(*args):
-    """ Returns the sum of the arguments provided """
+    """ Returns a STRING with the sum of the arguments """
 
     # TODO: Fill sum with the correct value, based on the
     # args provided.
-    sum = 0
+    sum = "0"
 
     return sum
 
@@ -64,7 +65,7 @@ def resolve_path(path):
     # determine the actual values of func and args using the
     # path.
     func = add
-    args = ['example', 'arguments']
+    args = ['25', '32']
 
     return func, args
 
