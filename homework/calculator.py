@@ -19,9 +19,11 @@ body in my browser should be `15`.
 Consider the following URL/Response body pairs as tests:
 
 ```
-  http://localhost:8080/multiply/3/5 => 15
-  http://localhost:8080/add/23/42    => 65
-  http://localhost:8080/divide/6/0   => HTTP "400 Bad Request"
+  http://localhost:8080/multiply/3/5   => 15
+  http://localhost:8080/add/23/42      => 65
+  http://localhost:8080/subtract/23/42 => -19
+  http://localhost:8080/divide/22/11   => 2
+  http://localhost:8080/divide/6/0     => HTTP "400 Bad Request"
 ```
 
 To submit your homework:
@@ -38,3 +40,40 @@ To submit your homework:
 
 
 """
+
+if __name__ == '__main__':
+    # TODO: Insert the same boilerplate wsgiref simple
+    # server creation that you used in the book database.
+    pass
+
+def application(environ, start_response)
+    # TODO: Your application code from the book database
+    # work here as well!
+    # 
+    # TODO (bonus): Add error handling for a user attempting
+    # to divide by zero.
+    pass
+
+def resolve_path(path)
+    """
+    Should return two values: a callable and an iterable of
+    arguments.
+    """
+
+    # TODO: Provide correct values for func and args. The
+    # examples provide the correct *syntax*, but you should
+    # determine the actual values of func and args using the
+    # path.
+    func = add
+    args = ['example', 'arguments']
+
+def add(*args):
+    """ Returns the sum of the arguments provided """
+
+    # TODO: Fill sum with the correct value, based on the
+    # args provided.
+    sum = 0
+
+    return sum
+
+# TODO: Add functions for handling more operations.
