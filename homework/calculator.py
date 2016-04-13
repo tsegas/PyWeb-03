@@ -46,15 +46,15 @@ if __name__ == '__main__':
     # server creation that you used in the book database.
     pass
 
-def application(environ, start_response)
+def application(environ, start_response):
     # TODO: Your application code from the book database
     # work here as well!
-    # 
+    #
     # TODO (bonus): Add error handling for a user attempting
     # to divide by zero.
     pass
 
-def resolve_path(path)
+def resolve_path(path):
     """
     Should return two values: a callable and an iterable of
     arguments.
