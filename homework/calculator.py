@@ -67,6 +67,8 @@ def resolve_path(path)
     func = add
     args = ['example', 'arguments']
 
+    return func, args
+
 def add(*args):
     """ Returns the sum of the arguments provided """
 
